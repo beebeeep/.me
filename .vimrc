@@ -101,8 +101,6 @@ colorscheme inkpot2
 
 map <F2> :NERDTreeToggle<CR>
 
-command WelltimeIndent set tabstop=2 | set shiftwidth=2 | set expandtab | retab
-
 set tabstop=4
 set shiftwidth=4
 set smarttab
@@ -110,12 +108,39 @@ set expandtab
 set softtabstop=4
 set autoindent
 set nobackup
-let python_highlight_all = 1
-autocmd FileType python set omnifunc=pythoncomplete#Complete
+" let python_highlight_all = 1
+" autocmd FileType python set omnifunc=pythoncomplete#Complete
 autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
 autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
 autocmd FileType css set omnifunc=csscomplete#CompleteCSS
+autocmd FileType python setlocal completeopt-=preview
+
+execute pathogen#infect() 
+execute pathogen#helptags() 
 
 
+" let python_highlight_all = 1
+" autocmd FileType python set omnifunc=pythoncomplete#Complete
+autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
+autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
+autocmd FileType css set omnifunc=csscomplete#CompleteCSS
+autocmd FileType python setlocal completeopt-=preview
 
+
+let g:jedi#use_tabs_not_buffers = 1
+let g:jedi#popup_on_dot = 0
+let g:jedi#auto_initialization = 0
+
+let g:ycm_goto_buffer_command = 'new-or-existing-tab'
+nnoremap <leader>jd :YcmCompleter GoTo<CR>
+nnoremap <leader>jr :YcmCompleter GoToReferences<CR>
+nnoremap <leader>bl :PymodeLint<CR>
+autocmd FileType go nmap <leader>b  <Plug>(go-build)
+autocmd FileType go nmap <leader>r  <Plug>(go-run)
+
+let g:pymode_folding = 0
+let g:pymode_options_colorcolumn = 0
+let g:pymode_options_max_line_length = 150
+let g:pymode_rope_goto_definition_cmd = 'new'
+let g:pymode_rope_completion = 0
 

@@ -1,6 +1,5 @@
-[user]
-   name = Daniil Migalin
-   email = midanil@microsoft.com
+[include] 
+    path = ~/.gituser
 
 [alias]
     st = status
@@ -48,7 +47,8 @@
 [push]
 	default = simple
 [core]
-    excludesfile = ~/.gitignore
+	excludesfile = /home/midanil/.gitignore_global
+    editor = vim
 
 #[credential "https://vstfskype.europe.corp.microsoft.com"]
 #    usename=midanil
