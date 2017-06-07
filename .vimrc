@@ -100,8 +100,6 @@ colorscheme inkpot2
 
 map <F2> :NERDTreeToggle<CR>
 
-command WelltimeIndent set tabstop=2 | set shiftwidth=2 | set expandtab | retab
-
 set tabstop=4
 set shiftwidth=4
 set smarttab
