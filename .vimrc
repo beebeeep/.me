@@ -100,8 +100,6 @@ colorscheme inkpot2
 
 map <F2> :NERDTreeToggle<CR>
 
-command WelltimeIndent set tabstop=2 | set shiftwidth=2 | set expandtab | retab
-
 set tabstop=4
 set shiftwidth=4
 set smarttab
@@ -126,6 +124,9 @@ let g:jedi#auto_initialization = 0
 let g:ycm_goto_buffer_command = 'new-or-existing-tab'
 nnoremap <leader>jd :YcmCompleter GoTo<CR>
 nnoremap <leader>jr :YcmCompleter GoToReferences<CR>
+nnoremap <leader>bl :PymodeLint<CR>
+autocmd FileType go nmap <leader>b  <Plug>(go-build)
+autocmd FileType go nmap <leader>r  <Plug>(go-run)
 
 let g:pymode_folding = 0
 let g:pymode_options_colorcolumn = 0
