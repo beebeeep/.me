@@ -144,3 +144,11 @@ let g:pymode_options_max_line_length = 150
 let g:pymode_rope_goto_definition_cmd = 'new'
 let g:pymode_rope_completion = 0
 
+" color of the current tag in the status line (bold cyan on black)
+highlight User1 gui=bold guifg=cyan guibg=black
+" color of the modified flag in the status line (bold black on red)
+highlight User2 gui=bold guifg=black guibg=red
+" the status line will be displayed for every window
+set laststatus=2
+" set the status line to display some useful information
+set stl=%-f%r\ %2*%m%*\ \ \ \ %1*%{TagInStatusLine()}%*%=[%l:%c]\ \ \ \ [buf\ %n]
