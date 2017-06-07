@@ -1,0 +1,60 @@
+[user]
+   name = Migalin Danila
+   email = me@miga.me.uk
+
+[alias]
+    st = status
+    br = branch
+    ba = branch -a -v -v
+    bs = !git-branch-status
+    bsi = !git-branch-status -i
+    ci = commit
+    co = checkout
+
+    d = diff -C
+    ds = diff -C --stat
+    dsp = diff -C --stat -p
+    dw = diff -C --color-words
+
+    l = log -C --decorate
+    ls = log -C --stat --decorate
+    lsp = log -C --stat -p --decorate
+    lg = log --graph '--pretty=tformat:%C(bold blue)%h%Creset %Cgreen%ar%Creset %C(bold blue)%d%Creset %s'
+    lga = log --graph '--pretty=tformat:%C(bold blue)%h%Creset %Cgreen%ar%Creset %C(bold red)%d%Creset %s' --all
+    l19 = log --graph '--pretty=tformat:%C(bold blue)%h%Creset %Cgreen%ar%Creset %C(bold red)%d%Creset %s' --all -19
+# для сложных ветвлений
+    lsd = log --graph '--pretty=tformat:%C(bold blue)%h%Creset %Cgreen%ar%Creset %C(bold blue)%d%Creset %s' --all --simplify-by-decoration
+    ru = remote update
+    sb = show-branch --sha1-name
+    ls-del = ls-files -d
+    ls-mod = ls-files -m # включая удалённые файлы
+    ls-new = ls-files --exclude-standard -o
+    ls-ign = ls-files --exclude-standard -o -i
+    ka = !gitk --all
+    kdo = !gitk --date-order
+    kado = !gitk --all --date-order
+    kasd = !gitk --all --simplify-by-decoration
+
+[diff]
+    color = auto
+    remane = copy
+    tool = vimdiff
+
+[merge]
+    tool = vimdiff
+
+[status]
+    color = auto
+[push]
+	default = simple
+[core]
+	excludesfile = /home/midanil/.gitignore_global
+    editor = vim
+
+#[credential "https://vstfskype.europe.corp.microsoft.com"]
+#    usename=midanil
+[credential]
+    #helper = /usr/share/doc/git/contrib/credential/gnome-keyring/git-credential-gnome-keyring
+	helper = 'store'
+[difftool]
+	prompt = false
