@@ -97,7 +97,6 @@ set foldmethod=manual
 let perl_fold = 1
 
 
-colorscheme inkpot2
 
 map <F2> :NERDTreeToggle<CR>
 
@@ -108,6 +107,7 @@ set expandtab
 set softtabstop=4
 set autoindent
 set nobackup
+set nonumber
 " let python_highlight_all = 1
 " autocmd FileType python set omnifunc=pythoncomplete#Complete
 autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
@@ -152,3 +152,6 @@ highlight User2 gui=bold guifg=black guibg=red
 set laststatus=2
 " set the status line to display some useful information
 set stl=%-f%r\ %2*%m%*\ \ \ \ %1*%{TagInStatusLine()}%*%=[%l:%c]\ \ \ \ [buf\ %n]
+set termguicolors
+let ayucolor="mirage" 
+colorscheme ayu
