@@ -10,3 +10,6 @@
 [submodule ".vim/bundle/pythonhelper"]
 	path = .vim/bundle/pythonhelper
 	url = https://github.com/mgedmin/pythonhelper.vim
+[submodule ".vim/bundle/vim-dues"]
+	path = .vim/bundle/vim-dues
+	url = git@github.com:ajmwagar/vim-dues.git
