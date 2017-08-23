@@ -143,6 +143,7 @@ let g:pymode_options_colorcolumn = 0
 let g:pymode_options_max_line_length = 150
 let g:pymode_rope_goto_definition_cmd = 'new'
 let g:pymode_rope_completion = 0
+let g:pymode_lint_ignore = "E501"
 
 " color of the current tag in the status line (bold cyan on black)
 highlight User1 gui=bold guifg=cyan guibg=black

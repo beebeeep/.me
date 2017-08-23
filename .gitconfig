@@ -52,8 +52,8 @@
 
 #[credential "https://vstfskype.europe.corp.microsoft.com"]
 #    usename=midanil
-[credential]
+#[credential]
     #helper = /usr/share/doc/git/contrib/credential/gnome-keyring/git-credential-gnome-keyring
-	helper = 'store'
+#	helper = 'store'
 [difftool]
 	prompt = false

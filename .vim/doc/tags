@@ -222,6 +222,9 @@ perlsupport-usage-gvim	perlsupport.txt	/*perlsupport-usage-gvim*
 perlsupport-windows	perlsupport.txt	/*perlsupport-windows*
 perlsupport-xterm	perlsupport.txt	/*perlsupport-xterm*
 perlsupport.txt	perlsupport.txt	/*perlsupport.txt*
+ps1-about	ps1.txt	/*ps1-about*
+ps1-syntax	ps1.txt	/*ps1-syntax*
+ps1.txt	ps1.txt	/*ps1.txt*
 taglist-commands	taglist.txt	/*taglist-commands*
 taglist-debug	taglist.txt	/*taglist-debug*
 taglist-extend	taglist.txt	/*taglist-extend*
