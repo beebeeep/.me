@@ -47,7 +47,7 @@
 [push]
 	default = simple
 [core]
-	excludesfile = /home/midanil/.gitignore_global
+	excludesfile = ~/.gitignore_global
     editor = vim
 
 #[credential "https://vstfskype.europe.corp.microsoft.com"]
